@@ -24,8 +24,8 @@ public class ShipmentController {
 
     private static final Logger logger = LoggerFactory.getLogger(ShipmentController.class);
 
-    @Topic(name = "payments", pubsubName = "paymentpubsub")
-    @PostMapping(path = "/payments", consumes = MediaType.ALL_VALUE)
+    @Topic(name = "paymentStatus", pubsubName = "paymentpubsub")
+    @PostMapping(path = "/paymentStatus", consumes = MediaType.ALL_VALUE)
     public Mono<ResponseEntity> getPaymentStatus(@RequestBody(required = false) CloudEvent<String> cloudEvent) {
         return Mono.fromSupplier(() -> {
             try {
@@ -43,6 +43,7 @@ public class ShipmentController {
 @Getter
 @Setter
 class Payment {
+    private String paymentId;
     private int orderId;
     private Status status;
 }

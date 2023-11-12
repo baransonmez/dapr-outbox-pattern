@@ -1,0 +1,10 @@
+version: 1
+common:
+  resourcesPath: ./resources/
+apps:
+  - appID: payment
+    appDirPath: ./payment/
+    command: [ "java", "-jar", "target/payment-0.0.1-SNAPSHOT.jar" ]
+  - appID: shipment
+    appDirPath: ./shipment/
+    command: [ "java", "-jar", "target/shipment-0.0.1-SNAPSHOT.jar" ]
