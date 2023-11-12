@@ -1,0 +1,7 @@
+version: 1
+common:
+  resourcesPath: ../resources/
+apps:
+  - appID: shipment
+    appDirPath: ./
+    command: [ "java", "-jar", "target/shipment-0.0.1-SNAPSHOT.jar" ]
