@@ -1,6 +1,6 @@
 version: 1
 common:
-  resourcesPath: ../resources/
+  resourcesPath: ./dapr-resource/
 apps:
   - appID: payment
     appDirPath: ./

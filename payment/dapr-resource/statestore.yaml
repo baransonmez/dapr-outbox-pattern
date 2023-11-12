@@ -14,5 +14,3 @@ spec:
       value: "paymentpubsub"
     - name: outboxPublishTopic # Required
       value: "paymentStatus"
-  scopes:
-    - payment
