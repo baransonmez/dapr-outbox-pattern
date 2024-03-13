@@ -54,4 +54,9 @@
         </plugins>
     </build>
 
+    <modules>
+        <module>shipment</module>
+        <module>payment</module>
+    </modules>
+    <packaging>pom</packaging>
 </project>
